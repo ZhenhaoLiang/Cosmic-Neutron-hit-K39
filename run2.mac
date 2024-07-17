@@ -1,0 +1,32 @@
+/run/initialize
+
+/control/verbose 2
+/run/verbose 2
+/tracking/verbose 0
+# define general particle source
+#
+/gps/particle neutron
+
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/centre 0 2 0 cm
+/gps/pos/halfx 10. cm
+/gps/pos/halfy 10. cm
+
+#粒子方向
+/gps/ang/type planar
+/gps/direction 0 -1 0
+
+#能谱输入
+
+/gps/ene/type Pow
+/gps/ene/min 0.01 eV
+/gps/ene/max 10. MeV
+/gps/ene/alpha -1.
+
+########################################
+#
+# start beam
+#
+/run/printProgress 1000
+/run/beamOn 1000
