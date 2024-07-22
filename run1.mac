@@ -17,12 +17,46 @@
 /gps/direction 0 0 -1
 
 #能谱输入
+#https://www.sciencedirect.com/science/article/pii/S0969804321002037#fig3
 
-/gps/ene/type Pow
-/gps/ene/min 0.01 eV
-/gps/ene/max 10. MeV
-/gps/ene/alpha -1.
+/gps/ene/type Arb
+/gps/hist/type arb
+/gps/hist/point	1.35E-05	0.013921929
+/gps/hist/point	2.08E-05	0.016314716
+/gps/hist/point	3.65E-05	0.015040899
+/gps/hist/point	6.21E-05	0.021601725
+/gps/hist/point	9.88E-05	0.014264529
+/gps/hist/point	0.000294098	0.015887214
+/gps/hist/point	0.000848742	0.017636824
+/gps/hist/point	0.002160682	0.017367018
+/gps/hist/point	0.00624889	0.024423581
+/gps/hist/point	0.0099668	0.023404186
+/gps/hist/point	0.016439033	0.028322954
+/gps/hist/point	0.028795567	0.027933629
+/gps/hist/point	0.046059205	0.033990171
+/gps/hist/point	0.13308543	0.038772326
+/gps/hist/point	0.182226152	0.045589852
+/gps/hist/point	0.375223191	0.059981333
+/gps/hist/point	0.675716465	0.050999229
+/gps/hist/point	0.98244272	0.052129596
+/gps/hist/point	0.98244272	0.052129596
+/gps/hist/point	1.295739459	0.043279546
+/gps/hist/point	1.817783956	0.03303844
+/gps/hist/point	2.812965508	0.034294023
+/gps/hist/point	3.713786775	0.027971094
+/gps/hist/point	4.605295335	0.020764812
+/gps/hist/point	4.896850923	0.018489264
+/gps/hist/point	8.308182212	0.016205169
+/gps/hist/point	13.25805931	0.016449334
+/gps/hist/point	24.06963933	0.027557837
+/gps/hist/point	61.58790086	0.039923633
+/gps/hist/point	104.6307356	0.040924794
+/gps/hist/point	172.0670266	0.038514913
+/gps/hist/point	220.2133628	0.032318909
+/gps/hist/point	318.6297855	0.021445454
+/gps/hist/point	538.8959896	0.011327285
+/gps/hist/point	712.2686572	0.007784189
 
-#/gps/hist/inter
+/gps/hist/inter Lin
 
-/run/beamOn 100000
+/run/beamOn 180000
