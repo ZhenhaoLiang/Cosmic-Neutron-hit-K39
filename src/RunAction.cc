@@ -40,6 +40,7 @@ RunAction::RunAction()
   analysisManager->CreateNtupleDColumn("trackID");
   analysisManager->CreateNtupleDColumn("parentID");  //10
   analysisManager->CreateNtupleDColumn("dE"); 
+  analysisManager->CreateNtupleSColumn("prosName"); 
   analysisManager->FinishNtuple();
 }
 

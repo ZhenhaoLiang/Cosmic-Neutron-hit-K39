@@ -31,7 +31,7 @@ file_list = glob.glob(f"out/**.root")  #root文件路径
 #event_vals = ['eventid', ]
 step_vals = ['Energy','prex', 'prey', 'prez','postx',    #要读取的信息。
             'posty', 'postz', 'ptype', 'eventID',
-            'trackID','parentID', 'dE']
+            'trackID','parentID', 'dE','prosName']
 df = pd.DataFrame()
 count = 0
 for ind, f in tqdm.tqdm(enumerate(file_list)):
@@ -39,7 +39,7 @@ for ind, f in tqdm.tqdm(enumerate(file_list)):
                            tr_ttree='event',
                            step_vals=step_vals)
     if isinstance(_df,pd.DataFrame):
-        _df.eventID += count * 10000000
+        _df.eventID += count * 5000
         count = count + 1
         df = pd.concat((df, _df), ignore_index=True)
 
