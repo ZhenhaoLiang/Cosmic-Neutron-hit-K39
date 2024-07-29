@@ -94,7 +94,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
    
   G4Box* solidKBox =    
     new G4Box("solidKBox",                    //its name
-        0.5*bok_sizeXY, 0.5*bok_sizeXY, 0.5*0.85*cm); //its size
+        0.25*bok_sizeXY, 0.85*cm, 0.5*bok_sizeXY); //its size
       
   G4LogicalVolume* logicKBox =                         
     new G4LogicalVolume(solidKBox,            //its solid
@@ -129,15 +129,17 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
                     0,                       //copy number
                     checkOverlaps);          //overlaps checking          */  
   //Detector===============================================================  
-  G4Box* solidDetector =    
-    new G4Box("solidDetector",                    //its name
-        0.5*bok_sizeXY, 0.5*cm, 0.5*bok_sizeXY); //its size
+  G4Tubs* solidDetector =    
+    new G4Tubs("solidDetector",                    //its name
+        0, 2*cm, 0.1*cm,0, 360*deg); //its size
   G4LogicalVolume* logicDetector =                         
     new G4LogicalVolume(solidDetector,         //its solid
                         Air,          //its material
                         "Detector");           //its name
-  new G4PVPlacement(0,                       //no rotation
-                    G4ThreeVector(0,0.5*bok_sizeXY + 0.25*cm,0),   //at position
+  G4RotationMatrix *DetectorRot = new G4RotationMatrix;
+  DetectorRot->rotateX(90.*deg); 
+  new G4PVPlacement(DetectorRot,                       //no rotation
+                    G4ThreeVector(0,(0.06+0.85)*cm,0),   //at position
                     logicDetector,             //its logical volume
                     "Detector",                //its name
                     logicWorld,                //its mother volume  is contanier

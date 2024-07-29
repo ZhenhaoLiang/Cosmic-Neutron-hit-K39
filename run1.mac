@@ -9,8 +9,8 @@
 /gps/pos/type Plane
 /gps/pos/shape Rectangle
 /gps/pos/centre 0 0 5 cm
-/gps/pos/halfx 5. cm
-/gps/pos/halfy 5. cm
+/gps/pos/halfx 2.5 cm
+/gps/pos/halfy 0.85. cm
 
 #粒子方向
 /gps/ang/type planar
