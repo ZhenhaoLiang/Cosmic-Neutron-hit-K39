@@ -21,6 +21,7 @@
 
 /gps/ene/type Arb
 /gps/hist/type arb
+
 /gps/hist/point	1.35E-05	0.013921929
 /gps/hist/point	2.08E-05	0.016314716
 /gps/hist/point	3.65E-05	0.015040899
@@ -56,7 +57,6 @@
 /gps/hist/point	318.6297855	0.021445454
 /gps/hist/point	538.8959896	0.011327285
 /gps/hist/point	712.2686572	0.007784189
+/gps/hist/inter Log
 
-/gps/hist/inter Lin
-
-/run/beamOn 180000
+/run/beamOn 5000
