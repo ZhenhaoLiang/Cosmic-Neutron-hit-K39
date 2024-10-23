@@ -1,0 +1,130 @@
+/run/initialize
+
+/control/verbose 2
+/run/verbose 2
+/tracking/verbose 0
+#点源输入
+/gps/particle neutron
+
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/centre 0 0 5 cm
+/gps/pos/halfx 2.5 cm
+/gps/pos/halfy 0.85. cm
+
+#粒子方向
+/gps/ang/type planar
+/gps/direction 0 0 -1
+
+#能谱输入
+#https://www.sciencedirect.com/science/article/pii/S0969804321002037#fig3
+
+/gps/ene/type Arb
+/gps/hist/type arb
+
+/gps/hist/point	2.70E-09	1.86579E-05
+/gps/hist/point	5.07E-09	4.92967E-05
+/gps/hist/point	7.33E-09	9.02067E-05
+/gps/hist/point	8.16E-09	0.000127736
+/gps/hist/point	1.01E-08	0.000175492
+/gps/hist/point	1.25E-08	0.000216421
+/gps/hist/point	1.39E-08	0.000250538
+/gps/hist/point	1.47E-08	0.000298312
+/gps/hist/point	1.72E-08	0.0003529
+/gps/hist/point	1.92E-08	0.000407494
+/gps/hist/point	2.25E-08	0.000475734
+/gps/hist/point	2.38E-08	0.000543986
+/gps/hist/point	2.52E-08	0.000612239
+/gps/hist/point	3.12E-08	0.000690711
+/gps/hist/point	3.30E-08	0.000769202
+/gps/hist/point	3.87E-08	0.000830615
+/gps/hist/point	4.55E-08	0.000888616
+/gps/hist/point	5.06E-08	0.000932972
+/gps/hist/point	6.25E-08	0.000963662
+/gps/hist/point	7.31E-08	0.000939752
+/gps/hist/point	7.68E-08	0.000895377
+/gps/hist/point	8.51E-08	0.000830518
+/gps/hist/point	8.93E-08	0.000752014
+/gps/hist/point	1.04E-07	0.000666671
+/gps/hist/point	1.21E-07	0.000574502
+/gps/hist/point	1.34E-07	0.000485752
+/gps/hist/point	1.48E-07	0.000407242
+/gps/hist/point	1.64E-07	0.000342383
+/gps/hist/point	1.92E-07	0.000294392
+/gps/hist/point	2.14E-07	0.000258827
+/gps/hist/point	2.38E-07	0.000235112
+/gps/hist/point	2.96E-07	0.000223235
+/gps/hist/point	4.26E-07	0.000213709
+/gps/hist/point	6.85E-07	0.000220761
+/gps/hist/point	1.0994E-06	0.000225443
+/gps/hist/point	1.70264E-06	0.000234869
+/gps/hist/point	2.45138E-06	0.000241935
+/gps/hist/point	3.40319E-06	0.000249005
+/gps/hist/point	4.89916E-06	0.0002537
+/gps/hist/point	7.58639E-06	0.000260756
+/gps/hist/point	1.13205E-05	0.000255967
+/gps/hist/point	6.26938E-05	0.000262865
+/gps/hist/point	0.000100644	0.000262807
+/gps/hist/point	0.000167579	0.000265114
+/gps/hist/point	0.0002791	0.000272161
+/gps/hist/point	0.000719623	0.000281525
+/gps/hist/point	0.001546825	0.000293281
+/gps/hist/point	0.002307909	0.000286121
+/gps/hist/point	0.003573821	0.000293178
+/gps/hist/point	0.004960835	0.000297877
+/gps/hist/point	0.006887866	0.000307317
+/gps/hist/point	0.010288402	0.000321488
+/gps/hist/point	0.01536778	0.00033566
+/gps/hist/point	0.021342683	0.00034984
+/gps/hist/point	0.031911263	0.000382972
+/gps/hist/point	0.053233488	0.00042083
+/gps/hist/point	0.088957263	0.00049187
+/gps/hist/point	0.128586993	0.000574779
+/gps/hist/point	0.149079925	0.000617423
+/gps/hist/point	0.192237471	0.000605541
+/gps/hist/point	0.23136869	0.000667141
+/gps/hist/point	0.278326949	0.000719261
+/gps/hist/point	0.332907358	0.000662356
+/gps/hist/point	0.397350781	0.000565159
+/gps/hist/point	0.506997311	0.001046263
+/gps/hist/point	0.610731017	0.001124454
+/gps/hist/point	0.737519762	0.001250047
+/gps/hist/point	0.847126316	0.001114933
+/gps/hist/point	0.900311044	0.000887394
+/gps/hist/point	0.999493122	0.000797317
+/gps/hist/point	1.171960671	0.00105564
+/gps/hist/point	1.217383184	0.001086447
+/gps/hist/point	1.310968718	0.001110139
+/gps/hist/point	1.511234701	0.001043758
+/gps/hist/point	1.690694642	0.001100627
+/gps/hist/point	1.953332571	0.001076908
+/gps/hist/point	2.036364556	0.001176448
+/gps/hist/point	2.385080512	0.00141344
+/gps/hist/point	2.636012237	0.001238039
+/gps/hist/point	2.80952625	0.001065012
+/gps/hist/point	3.112066721	0.000932273
+/gps/hist/point	3.310328407	0.000721325
+/gps/hist/point	3.68781751	0.000697611
+/gps/hist/point	4.140128206	0.000820842
+/gps/hist/point	4.490647587	0.000982
+/gps/hist/point	5.168933498	0.000887178
+/gps/hist/point	5.741931643	0.000808951
+/gps/hist/point	6.848333248	0.000697534
+/gps/hist/point	7.338227792	0.000626422
+/gps/hist/point	8.471852688	0.000588482
+/gps/hist/point	10.51286554	0.000538683
+/gps/hist/point	17.61371346	0.000659496
+/gps/hist/point	20.46654235	0.000744801
+/gps/hist/point	34.59871776	0.001036261
+/gps/hist/point	58.40928361	0.001301649
+/gps/hist/point	105.1751733	0.001408232
+/gps/hist/point	165.9703061	0.001081099
+/gps/hist/point	300.2331024	0.000580931
+/gps/hist/point	492.5085815	0.000298826
+/gps/hist/point	874.2563977	0.000132847
+/gps/hist/point	1449.557041	5.45708E-05
+/gps/hist/point	2590.446386	1.65772E-05
+/gps/hist/point	4311.656083	1.17741E-05
+
+
+/run/beamOn 5000
